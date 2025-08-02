@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 51, 51, 51; /* Darker text for better readability */
+  --background-rgb: 255, 255, 255;
+  
+  /* IEEE Sensors Council color scheme based on logo */
+  --primary-rgb: 0, 149, 149; /* Teal from logo */
+  --secondary-rgb: 0, 153, 236; /* Blue from logo */
+  --accent-rgb: 9, 46, 61; /* Dark blue instead of green */
+  --light-bg-rgb: 245, 250, 250; /* Very light teal for sections */
+  --alt-bg-rgb: 237, 247, 247; /* Alternate section background */
+  --text-dark-rgb: 9, 46, 61; /* Dark text */
+  --text-medium-rgb: 82, 82, 82; /* Medium text */
+  --success-rgb: 34, 197, 94;
+  --warning-rgb: 234, 179, 8;
+  --error-rgb: 239, 68, 68;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Override dark mode to keep the light theme */
+    --foreground-rgb: 51, 51, 51;
+    --background-rgb: 255, 255, 255;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-family: var(--font-open-sans), 'Open Sans', sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-all duration-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-white border-2 border-primary text-primary px-6 py-3 rounded-md hover:bg-primary/5 transition-all duration-300;
+  }
+  
+  .section-padding {
+    @apply py-12 md:py-16;
+  }
+  
+  .section-alt {
+    @apply bg-alt-bg;
+  }
+  
+  .section-light {
+    @apply bg-light-bg;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .text-default {
+    @apply text-text-dark;
+  }
+  
+  .text-medium {
+    @apply text-text-medium;
+  }
+  
+  .heading-1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-calibri font-bold text-text-dark;
+  }
+  
+  .heading-2 {
+    @apply text-3xl md:text-4xl font-calibri font-bold text-text-dark;
+  }
+  
+  .heading-3 {
+    @apply text-2xl md:text-3xl font-calibri font-semibold text-text-dark;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border border-primary/10;
+  }
+}
