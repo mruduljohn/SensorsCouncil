@@ -36,7 +36,7 @@ const members = [
   {
     name: 'Mr. Anish Sathyan',
     title: 'Secretary, CDAC',
-    image: '/images/anish -photoroom.png',
+    image: '/images/anis-photoroom.png',
     social: {
       linkedin: 'https://www.linkedin.com/in/anish-sathyan/'
     },
@@ -71,7 +71,7 @@ const members = [
   },
   {
     name: 'Vaishakh Suresh',
-    title: 'Technical Coordinator',
+    title: 'Technical Coordinator, Mygate',
     image: '/images/vaishakh-suresh.png',
     social: {},
     gradient: 'from-green-500/40 to-blue-500/40',
@@ -80,7 +80,7 @@ const members = [
   },
   {
     name: 'Mr. Mrudul John Mathews',
-    title: 'Webmaster, CUSAT',
+    title: 'Webmaster, FinalApps',
     image: '/images/MRUDUL-Photoroom 1.png',
     social: {
       linkedin: 'https://linkedin.com/in/mruduljohnmathews'
@@ -89,7 +89,7 @@ const members = [
   },
   {
     name: 'Flemin K Sony',
-    title: 'Technical Coordinator',
+    title: 'Technical Coordinator, Flymin Innovation ',
     image: '/images/flemin-k-sony.png',
     social: {},
     gradient: 'from-green-500/40 to-blue-500/40',
