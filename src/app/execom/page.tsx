@@ -36,7 +36,7 @@ const members = [
   {
     name: 'Mr. Anish Sathyan',
     title: 'Secretary, CDAC',
-    image: '/images/anis-photoroom.png',
+    image: '/images/anish -Photoroom.png',
     social: {
       linkedin: 'https://www.linkedin.com/in/anish-sathyan/'
     },
