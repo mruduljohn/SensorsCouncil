@@ -1,18 +1,18 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Mail, Phone, MapPin, ExternalLink, Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react'
+import { Mail, MapPin, ExternalLink, Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   const quickLinks = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '#about' },
+    { name: 'About', href: '/#about' },
     { name: 'ExeCom', href: '/execom' },
     // { name: 'Events', href: '/events' },
     { name: 'Gallery', href: '/gallery' },
-    { name: 'Summer School', href: '/summer-school' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'AIoT Labs', href: '/aiot-labs' },
+    { name: 'Contact', href: '/#contact' },
   ]
 
   // const activities = [
@@ -78,19 +78,10 @@ const Footer = () => {
                 <div className="flex items-center space-x-2">
                   <Mail className="h-4 w-4 text-primary-400 flex-shrink-0" />
                   <a 
-                    href="mailto:sensorscouncil@ieeekerala.org" 
+                    href="mailto:shone.jose@ieee.org" 
                     className="text-gray-300 hover:text-primary-300 transition-colors text-sm"
                   >
-                    sensorscouncil@ieeekerala.org
-                  </a>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Phone className="h-4 w-4 text-primary-400 flex-shrink-0" />
-                  <a 
-                    href="tel:+918123238843" 
-                    className="text-gray-300 hover:text-primary-300 transition-colors text-sm"
-                  >
-                    +91 8123238843
+                    shone.jose@ieee.org
                   </a>
                 </div>
               </div>

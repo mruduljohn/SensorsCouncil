@@ -132,10 +132,10 @@ export default function ContactPage() {
                   <h3 className="text-xl font-semibold text-text-dark">Email</h3>
                 </div>
                 <a 
-                  href="mailto:sensorscouncil@ieeekerala.org" 
+                  href="mailto:shone.jose@ieee.org" 
                   className="text-text-medium hover:text-primary transition-colors"
                 >
-                  sensorscouncil@ieeekerala.org
+                  shone.jose@ieee.org
                 </a>
                 <a 
                   href="mailto:contact@ieeesensorscouncil.org" 

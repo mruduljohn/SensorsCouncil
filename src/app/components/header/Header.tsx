@@ -11,6 +11,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+  const hasSolidBackground = pathname !== '/' || isScrolled;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,6 +48,7 @@ const Header = () => {
       path: '/#activities',
       onClick: handleSectionScroll('activities')
     },
+    { name: 'AIoT Labs', path: '/aiot-labs' },
     // { 
     //   name: 'Announcements', 
     //   path: '/#announcements',
@@ -61,9 +63,18 @@ const Header = () => {
     },
   ];
 
+  const getLinkClasses = (path: string) => {
+    const isHashLink = path.includes('#')
+    const isActive = !isHashLink && (pathname === path || pathname.startsWith(`${path}/`))
+
+    return `transition-colors font-medium ${
+      isActive ? 'text-primary' : 'text-slate-700 hover:text-primary'
+    }`
+  }
+
   return (
     <header className={`sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled 
+      hasSolidBackground
         ? 'bg-white/95 backdrop-blur-sm shadow-lg' 
         : 'bg-transparent'
     }`}>
@@ -88,7 +99,7 @@ const Header = () => {
               key={link.name} 
               href={link.path}
               onClick={link.onClick}
-              className="text-slate-700 hover:text-primary transition-colors font-medium"
+              className={getLinkClasses(link.path)}
             >
               {link.name}
             </Link>
@@ -124,7 +135,7 @@ const Header = () => {
                     if (link.onClick) link.onClick(e)
                     setIsOpen(false)
                   }}
-                  className="text-slate-700 hover:text-primary transition-colors py-2 font-medium"
+                  className={`${getLinkClasses(link.path)} py-2`}
                 >
                   {link.name}
                 </Link>
