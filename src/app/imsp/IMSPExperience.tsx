@@ -22,8 +22,8 @@ import {
 
 const stats = [
   { value: '2', label: 'Months of mentorship' },
-  { value: '4', label: 'Students per team' },
-  { value: '2+2', label: 'Cross-college pairs' },
+  { value: '1-2', label: 'Students per team' },
+  { value: 'Weekly', label: 'Mentor reviews' },
   { value: 'July', label: '2026 Batch' },
 ]
 
@@ -45,7 +45,7 @@ const howItWorks = [
     phase: '02',
     title: 'Two-Month Project Phase',
     description:
-      'Cross-college teams of four build their software solutions with weekly one-hour mentor review sessions, guided by industry-standard practices and AI-assisted development tools.',
+      'Participants build their software solutions with weekly one-hour mentor review sessions, guided by industry-standard practices and AI-assisted development tools.',
     icon: Code2,
   },
   {
@@ -109,7 +109,7 @@ const eligibility = [
   },
   {
     title: 'Team Structure',
-    description: 'Four students per team: two from one college and two from a different college.',
+    description: 'Apply solo or as a team of up to two students from the same or different colleges.',
     icon: Users,
   },
   {
@@ -249,34 +249,33 @@ export default function IMSPExperience() {
                 {/* Team diagram */}
                 <div className="rounded-[1.75rem] border border-white/10 bg-black/10 px-5 py-6 backdrop-blur-sm">
                   <p className="mb-4 text-center text-xs font-semibold uppercase tracking-[0.22em] text-white/55">
-                    Team Structure
+                    Who Can Apply
                   </p>
                   <div className="flex items-center justify-center gap-3">
-                    {/* College A */}
+                    {/* Solo */}
                     <div className="flex flex-col items-center gap-2">
                       <div className="rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-center">
-                        <p className="text-[0.65rem] uppercase tracking-widest text-white/55">College A</p>
+                        <p className="text-[0.65rem] uppercase tracking-widest text-white/55">Solo</p>
                         <div className="mt-2 flex gap-2 justify-center">
                           <div className="h-8 w-8 rounded-full bg-[#00AEEF] flex items-center justify-center text-white text-xs font-bold">S1</div>
-                          <div className="h-8 w-8 rounded-full bg-[#00AEEF] flex items-center justify-center text-white text-xs font-bold">S2</div>
                         </div>
                       </div>
                     </div>
 
-                    {/* Plus connector */}
+                    {/* Or connector */}
                     <div className="flex flex-col items-center gap-1">
                       <div className="h-px w-6 bg-white/20" />
-                      <span className="text-white/40 text-lg font-light">+</span>
+                      <span className="text-white/40 text-xs font-semibold uppercase tracking-widest">or</span>
                       <div className="h-px w-6 bg-white/20" />
                     </div>
 
-                    {/* College B */}
+                    {/* Team */}
                     <div className="flex flex-col items-center gap-2">
                       <div className="rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-center">
-                        <p className="text-[0.65rem] uppercase tracking-widest text-white/55">College B</p>
+                        <p className="text-[0.65rem] uppercase tracking-widest text-white/55">Team of 2</p>
                         <div className="mt-2 flex gap-2 justify-center">
-                          <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold">S3</div>
-                          <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold">S4</div>
+                          <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold">S1</div>
+                          <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold">S2</div>
                         </div>
                       </div>
                     </div>
@@ -301,8 +300,8 @@ export default function IMSPExperience() {
                 <div className="grid grid-cols-3 gap-2">
                   {[
                     { val: '2mo', label: 'Duration' },
-                    { val: '4', label: 'Per team' },
-                    { val: '2+2', label: 'Colleges' },
+                    { val: '1-2', label: 'Per team' },
+                    { val: 'Any', label: 'Branch' },
                   ].map((s) => (
                     <div
                       key={s.label}
@@ -356,14 +355,15 @@ export default function IMSPExperience() {
             <p className="mt-6 max-w-3xl text-lg leading-8 text-text-medium">
               The Industry Mentors for Student Projects Program is a flagship initiative
               by the IEEE Sensors Council Kerala Chapter that connects 2nd and 3rd year
-              engineering students with experienced industry professionals. Over two months, cross-college teams develop software solutions
-              for real-world assistive technology problem statements identified in partnership
-              with government and community stakeholders.
+              engineering students with experienced industry professionals. Over two months,
+              participants develop software solutions for real-world assistive technology
+              problem statements identified in partnership with government and community
+              stakeholders.
             </p>
             <p className="mt-4 max-w-3xl text-base leading-8 text-text-medium">
-              Each team of four brings together two students from one college and two
-              from another, breaking institutional boundaries and building the kind of
-              collaborative, cross-functional skills that define great software teams.
+              Students can apply individually or as a team of up to two, from the same
+              or different colleges. The focus is on building real skills, solving meaningful
+              problems, and growing through direct mentorship.
             </p>
           </motion.div>
 
@@ -511,9 +511,8 @@ export default function IMSPExperience() {
                 Applications open for Cohort 1. Apply now.
               </h2>
               <p className="mt-6 text-lg leading-8 text-white/82">
-                Form your cross-college team of four and apply to be part of the inaugural
-                cohort of the Industry Mentors for Student Projects Program. Seats are
-                limited — apply early.
+                Apply solo or with a teammate and be part of the inaugural cohort of the
+                Industry Mentors for Student Projects Program. Seats are limited, so apply early.
               </p>
             </div>
 
