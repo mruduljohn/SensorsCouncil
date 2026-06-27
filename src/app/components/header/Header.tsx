@@ -49,6 +49,7 @@ const Header = () => {
       onClick: handleSectionScroll('activities')
     },
     { name: 'AIoT Labs', path: '/aiot-labs' },
+    { name: 'IMSP', path: '/imsp' },
     // { 
     //   name: 'Announcements', 
     //   path: '/#announcements',
