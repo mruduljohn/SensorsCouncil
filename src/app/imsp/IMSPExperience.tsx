@@ -21,14 +21,14 @@ import {
 } from 'lucide-react'
 
 const stats = [
-  { value: '30', label: 'Teams in Cohort 1' },
   { value: '2', label: 'Months of mentorship' },
   { value: '4', label: 'Students per team' },
   { value: '2+2', label: 'Cross-college pairs' },
+  { value: 'July', label: '2026 Batch' },
 ]
 
 const heroChips = [
-  'CS · AI · Data Science',
+  'All Engineering Branches',
   '2nd & 3rd Year Students',
   'July 2026 Cohort',
 ]
@@ -75,7 +75,7 @@ const benefits = [
     icon: Calendar,
   },
   {
-    text: 'Access complimentary Codex credits for AI-assisted software development.',
+    text: 'Gain exposure to AI-assisted development practices and modern tooling.',
     icon: Sparkles,
   },
   {
@@ -104,7 +104,7 @@ const eligibility = [
   },
   {
     title: 'Discipline',
-    description: 'Computer Science, Artificial Intelligence, or Data Science programmes.',
+    description: 'Open to students from any engineering discipline.',
     icon: Code2,
   },
   {
@@ -180,8 +180,6 @@ export default function IMSPExperience() {
               className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm font-semibold uppercase tracking-[0.32em] text-white/72"
             >
               <span>IEEE Sensors Council · Kerala Chapter</span>
-              <span className="text-white/30">·</span>
-              <span>Codex Community Kochi</span>
             </motion.p>
 
             <motion.h1
@@ -230,23 +228,6 @@ export default function IMSPExperience() {
               </a>
             </motion.div>
 
-            <motion.div
-              {...getHeroRevealProps(reduceMotion, 0.44)}
-              className="mt-8 flex items-center gap-3"
-            >
-              <span className="text-xs font-semibold uppercase tracking-[0.22em] text-white/45">
-                Powered by
-              </span>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-png/light/codex-color.png"
-                alt="Codex"
-                className="h-6 w-6 rounded-md"
-              />
-              <span className="text-sm font-semibold text-white/80">
-                Codex Community Kochi
-              </span>
-            </motion.div>
           </div>
 
           {/* Hero visual - cross-college team network */}
@@ -262,7 +243,7 @@ export default function IMSPExperience() {
                 {/* Header label */}
                 <div className="flex items-center justify-between text-[0.66rem] font-semibold uppercase tracking-[0.28em] text-white/55">
                   <span>Cohort 1 · July 2026</span>
-                  <span>30 teams</span>
+                  <span>Limited seats</span>
                 </div>
 
                 {/* Team diagram */}
@@ -313,7 +294,6 @@ export default function IMSPExperience() {
                   <div className="rounded-2xl border border-white/15 bg-white/8 px-5 py-4 text-center">
                     <p className="text-[0.65rem] uppercase tracking-widest text-white/55 mb-2">Industry Mentor</p>
                     <p className="text-sm font-semibold text-white/90">Weekly 1-hr Reviews</p>
-                    <p className="text-xs text-white/55 mt-1">+ Codex Credits</p>
                   </div>
                 </div>
 
@@ -322,7 +302,7 @@ export default function IMSPExperience() {
                   {[
                     { val: '2mo', label: 'Duration' },
                     { val: '4', label: 'Per team' },
-                    { val: '30', label: 'Teams max' },
+                    { val: '2+2', label: 'Colleges' },
                   ].map((s) => (
                     <div
                       key={s.label}
@@ -375,11 +355,10 @@ export default function IMSPExperience() {
             </h2>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-text-medium">
               The Industry Mentors for Student Projects Program is a flagship initiative
-              by the IEEE Sensors Council Kerala Chapter, supported by Codex Community
-              Kochi, that connects 2nd and 3rd year Computer Science, AI, and Data Science
-              students with experienced industry professionals. Over two months, cross-college
-              teams develop software solutions for real-world assistive technology problem
-              statements identified in partnership with government and community stakeholders.
+              by the IEEE Sensors Council Kerala Chapter that connects 2nd and 3rd year
+              engineering students with experienced industry professionals. Over two months, cross-college teams develop software solutions
+              for real-world assistive technology problem statements identified in partnership
+              with government and community stakeholders.
             </p>
             <p className="mt-4 max-w-3xl text-base leading-8 text-text-medium">
               Each team of four brings together two students from one college and two
@@ -529,12 +508,12 @@ export default function IMSPExperience() {
                 Cohort 1 · July 2026
               </p>
               <h2 className="mt-4 font-calibri text-4xl font-bold leading-tight md:text-5xl">
-                Limited to the first 30 teams. Apply now.
+                Applications open for Cohort 1. Apply now.
               </h2>
               <p className="mt-6 text-lg leading-8 text-white/82">
-                Applications are open for the July 2026 batch. Form your cross-college team
-                of four and apply to be part of the inaugural cohort of the Industry Mentors
-                for Student Projects Program.
+                Form your cross-college team of four and apply to be part of the inaugural
+                cohort of the Industry Mentors for Student Projects Program. Seats are
+                limited — apply early.
               </p>
             </div>
 
@@ -549,7 +528,7 @@ export default function IMSPExperience() {
                 <ArrowRight className="h-4 w-4" />
               </a>
               <p className="max-w-xs text-sm leading-7 text-white/68 lg:text-right">
-                Limited to the first 30 teams. Applications open for the July 2026 batch.
+                Applications open for the July 2026 batch.
               </p>
             </div>
           </motion.div>
